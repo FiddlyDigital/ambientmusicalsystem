@@ -8,3 +8,8 @@ No refresh will ever be the same.
 * Pull code, then use http-server or similiar to host.
 * load index.html in your browser
 * Refresh to taste!
+
+## Samples
+Courtesy of Sonatine Symphonic Orchestra
+http://sso.mattiaswestlund.net/download.html
+
