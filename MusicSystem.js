@@ -7,27 +7,31 @@
 (function(root, factory) {
     if (typeof define === "function" && define.amd) {
         // AMD
-        define(['MusicSystemSamples'], factory);
+        define([
+            'MusicSystemSamples', 
+            'MusicSystemImpulses', 
+            'MusicSystemVisualiser'
+        ], factory);
     } else if (typeof module === "object") {
         // Common JS
-        module.exports = factory(require('MusicSystemSamples'));
+        module.exports = factory(
+            require('MusicSystemSamples'), 
+            require('MusicSystemImpulses'), 
+            require('MusicSystemVisualiser'));
     } else {
         // Browser Globals (root is window)
-        root.MusicSystem = factory(root.MusicSystemSamples);
+        root.MusicSystem = factory(
+            root.MusicSystemSamples, 
+            root.MusicSystemImpulses, 
+            root.MusicSystemVisualiser
+        );
     }
-}(this, function(SAMPLE_LIBRARY) {
+}(this, function(SAMPLE_LIBRARY, IMPULSE_LIBRARY, VISUALISER) {
     'use strict';
 
     var OCTAVE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
     var audioContext = new AudioContext();
-
-    // Used for Visualiser
-    var VISUALISER_GREEN = 'rgb(38, 127, 57)';
-    var VISUALISER_WHITE = 'rgb(256,256,256)';
-    var canvas;
-    var canvasCtx;
     var analyser;
-    var dataArray;
 
     function getSample(instrument, note, octave) {
         var requestedOctave = parseInt(octave, 10);
@@ -142,69 +146,22 @@
         return instruments[getRandomInt(0, instruments.length - 1)];
     }
 
-    function drawFrame() {
-        analyser.getByteTimeDomainData(dataArray);
-
-        canvasCtx.fillStyle = 'rgb(38, 127, 57)';
-        canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
-        canvasCtx.lineWidth = 1;
-        canvasCtx.strokeStyle = 'rgb(256,256,256)';
-        canvasCtx.beginPath();
-
-        var sliceWidth = canvas.width * 1.0 / analyser.frequencyBinCount;
-        var x = 0;
-
-        for (var i = 0; i < analyser.frequencyBinCount; i++) {
-            var v = dataArray[i] / 128.0;
-            var y = v * canvas.height / 2;
-
-            if (i === 0) {
-                canvasCtx.moveTo(x, y);
-            } else {
-                canvasCtx.lineTo(x, y);
-            }
-
-            x += sliceWidth;
-        }
-
-        canvasCtx.lineTo(canvas.width, canvas.height / 2);
-        canvasCtx.stroke();
-
-        requestAnimationFrame(drawFrame);
-    }
-
-    function startVisualisation() {
-        canvas = document.getElementById('visualiser');
-        if (canvas) {
-            // set our visualiser to take up the whole screen
-            canvas.width = Math.min(window.innerWidth, window.outerWidth);
-            canvas.height = Math.min(window.innerHeight, window.outerHeight);
-
-            // global
-            canvasCtx = canvas.getContext('2d');
-
-            analyser.fftSize = 2048;
-
-            // global
-            dataArray = new Uint8Array(analyser.frequencyBinCount);
-
-            canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
-
-            drawFrame();
-        }
-    }
-
     function startLayer(instrument, destination) {
         var note = OCTAVE[getRandomInt(0, OCTAVE.length - 1)];
-        var oct = getRandomInt(0, 8);
+        var oct = getRandomInt(1, 8);
         var loopLength = getRandomFloat(0, 30);
         var loopDelay = getRandomFloat(0, loopLength / 2);
-
         startLoop(instrument, note, oct, destination, loopLength, loopDelay);
+
+        console.log('Note: ' + note + '' + oct + ' [' + loopLength + '/' + loopDelay + ']');
     }
 
     function startMusic() {
-        fetchSample('impulse_response/AirportTerminal.wav')
+        // Get a random Impulse Sample for the Convolver Reverb
+        var impulse = IMPULSE_LIBRARY[getRandomInt(0, IMPULSE_LIBRARY.length -1)];
+        console.log('Impulse: ' + impulse.name);
+
+        fetchSample(impulse.file)
             .then(function(convolverBuffer) {
                 var delay = audioContext.createDelay();
                 var feedback = audioContext.createGain();
@@ -217,8 +174,8 @@
                 analyser = audioContext.createAnalyser();
 
                 // Node Config
-                delay.delayTime.value = 0.5;
-                feedback.gain.value = 0.5;                
+                delay.delayTime.value = getRandomFloat(0.1,1);
+                feedback.gain.value = getRandomFloat(0.1,1);                
                 convolver.buffer = convolverBuffer;
 
                 // Node Connections
@@ -231,12 +188,14 @@
                 instrument = getRandominstrument();
                 layers = getRandomInt(1, 8);
 
+                console.log('Instrument: ' + instrument + ' - Layers: ' + layers);
+
                 for (layerIdx = 0; layerIdx < layers; layerIdx++) {
                     startLayer(instrument, convolver);
                 }
 
                 // Start Drawing
-                startVisualisation();
+                VISUALISER.start(analyser);
             });
     }
 

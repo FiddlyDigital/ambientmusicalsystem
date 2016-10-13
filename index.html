@@ -14,6 +14,27 @@
                 margin: 0;
                 border: 0;
                 padding: 0;
+                overflow: hidden;
+            }
+
+            #barCanvas, 
+            #lineCanvas {
+                position: fixed;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                top: 0;
+                bottom: 0;
+            }
+
+            #barCanvas {
+                
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000534+0,000020+100 */
+                background: #000534; /* Old browsers */
+                background: -moz-radial-gradient(center, ellipse cover,  #000534 0%, #000020 100%); /* FF3.6-15 */
+                background: -webkit-radial-gradient(center, ellipse cover,  #000534 0%,#000020 100%); /* Chrome10-25,Safari5.1-6 */
+                background: radial-gradient(ellipse at center,  #000534 0%,#000020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000534', endColorstr='#000020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             }
         </style>
 
@@ -23,11 +44,16 @@
 
         <!-- Modules -->
         <script src="MusicSystemSamples.js"></script>
+        <script src="MusicSystemImpulses.js"></script>
+        <script src="MusicSystemVisualiser.js"></script>
         <script src="MusicSystem.js"></script>
     </head>
 
     <body>
-        <canvas id="visualiser">
+        <canvas id="barCanvas">
+        </canvas>
+
+        <canvas id="lineCanvas">
         </canvas>
 
         <script src="index.js"></script>
