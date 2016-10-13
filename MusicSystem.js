@@ -148,7 +148,7 @@
 
     function startLayer(instrument, destination) {
         var note = OCTAVE[getRandomInt(0, OCTAVE.length - 1)];
-        var oct = getRandomInt(0, 8);
+        var oct = getRandomInt(1, 7);
         var loopLength = getRandomFloat(0, 30);
         var loopDelay = getRandomFloat(0, loopLength / 2);
         startLoop(instrument, note, oct, destination, loopLength, loopDelay);
@@ -186,9 +186,9 @@
 
                 // Start Randomising
                 instrument = getRandominstrument();
-                layers = getRandomInt(1, 8);
+                layers = getRandomInt(1, 10);
 
-                console.log('Instrument: ' + instrument + ' - Layers: ' + layers);
+                console.log('Instrument: ' + instrument);
 
                 for (layerIdx = 0; layerIdx < layers; layerIdx++) {
                     startLayer(instrument, convolver);

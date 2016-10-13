@@ -12,20 +12,29 @@
 }(this, function() {
     'use strict';
 
-    var VISUALISER_GREEN = 'rgb(38, 127, 57)';    
+    var RT_LINE_COLOR = '#9b59b6';
     var lineCanvas;
     var lineCanvasCtx;
     var barCanvas;
     var barCanvasCtx;
+    var waveformCanvas;
+    var waveformCanvasCtx;
     var analyser;
     var byteTimeArray;
     var byteFreqArray;
+    var column = 0;
+
+    // Used for WaveForm
+    var hue = 210;
+    var hueMin = hue;
+    var hueMax = 220
+    var hueDirectionUp = true;
 
     function drawLineFrame(byteTimeArray) {
         lineCanvasCtx.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
 
-        lineCanvasCtx.lineWidth = 3;
-        lineCanvasCtx.strokeStyle = VISUALISER_GREEN;
+        lineCanvasCtx.lineWidth = 1;
+        lineCanvasCtx.strokeStyle = RT_LINE_COLOR;
         lineCanvasCtx.beginPath();
 
         var sliceWidth = lineCanvas.width * 1.0 / analyser.frequencyBinCount;
@@ -48,27 +57,56 @@
         lineCanvasCtx.stroke();
     }
 
-    function drawBarFrame(byteFreqArray) {
-        barCanvasCtx.clearRect(0, 0, barCanvas.width, barCanvas.height);
+    function drawwaveformFrame(byteTimeArray) {
+        var timeVal;
+        var minVal = 9999999;
+        var maxVal = 0;        
 
         for (var i = 0; i < analyser.frequencyBinCount; i++) {
-            var value = byteFreqArray[i];
-            var percent = value / 256;
-            var height = barCanvas.height * percent;
-            var offset = barCanvas.height - height - 1;
-            var barWidth = barCanvas.width / analyser.frequencyBinCount;
-            var hue = i / analyser.frequencyBinCount * 360;
-            barCanvasCtx.fillStyle = 'hsl(' + hue + ', 100%, 50%)';
-            barCanvasCtx.fillRect(i * barWidth, offset, barWidth, height);
+            timeVal = byteTimeArray[i] / 256;
+
+            if(timeVal > maxVal){        
+                maxVal = timeVal;
+            }
+            if(timeVal < minVal){
+                minVal = timeVal;
+            }
+        }
+
+        var yBottom = waveformCanvas.height - (waveformCanvas.height * minVal) - 1;
+        var yTop = waveformCanvas.height - (waveformCanvas.height * maxVal) - 1;
+
+        waveformCanvasCtx.fillStyle = 'hsl(' + hue + ', 100%, 60%)';
+        waveformCanvasCtx.fillRect(column, yBottom, 1, (yTop - yBottom));
+
+        column += 1;
+        if(column >= waveformCanvas.width) {
+            column = 0;
+            waveformCanvasCtx.clearRect(0, 0, waveformCanvas.width, waveformCanvas.height);
+        }
+
+        if(hueDirectionUp) {
+            hue = hue + 0.1;
+        }
+        else {
+            hue = hue - 0.1;
+        }
+
+        if(hue > hueMax){
+            hueDirectionUp = false;
+        }
+
+        if(hue < hueMin){
+            hueDirectionUp = true;
         }
     }
 
     function drawFrame() {
         analyser.getByteTimeDomainData(byteTimeArray);
-        drawLineFrame(byteTimeArray);
+        //analyser.getByteFrequencyData(byteFreqArray);
 
-        analyser.getByteFrequencyData(byteFreqArray)
-        drawBarFrame(byteFreqArray);
+        drawLineFrame(byteTimeArray);
+        drawwaveformFrame(byteTimeArray);
 
         requestAnimationFrame(drawFrame);
     }
@@ -77,7 +115,7 @@
         var canvasHeight = Math.min(window.innerHeight, window.outerHeight);
         var canvasWidth = Math.min(window.innerWidth, window.outerWidth);
         analyser = analyserNode;
-        analyser.fftSize = 2048;    
+        analyser.fftSize = 2048;
         byteTimeArray = new Uint8Array(analyser.frequencyBinCount);
         byteFreqArray = new Uint8Array(analyser.frequencyBinCount);
 
@@ -86,25 +124,22 @@
             // set our visualiser to take up the whole screen
             lineCanvas.width = canvasWidth;
             lineCanvas.height = canvasHeight;
-
-            // global
             lineCanvasCtx = lineCanvas.getContext('2d');
-            lineCanvasCtx.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
+            lineCanvasCtx.clearRect(0, 0, canvasWidth, canvasHeight);
         }
 
-        barCanvas = document.getElementById('barCanvas');
-        if(barCanvas){
-            barCanvas.width = canvasWidth;
-            barCanvas.height = canvasHeight;
-
-            barCanvasCtx = barCanvas.getContext('2d');
-            barCanvasCtx.clearRect(0, 0, barCanvas.width, barCanvas.height);
+        waveformCanvas = document.getElementById('waveformCanvas');
+        if (waveformCanvas) {
+            waveformCanvas.width = canvasWidth;
+            waveformCanvas.height = canvasHeight;
+            waveformCanvasCtx = waveformCanvas.getContext('2d');
+            waveformCanvasCtx.clearRect(0, 0, canvasWidth, canvasHeight);
         }
 
         drawFrame();
     }
 
     return {
-        start : startVisualisation
+        start: startVisualisation
     };
 }));

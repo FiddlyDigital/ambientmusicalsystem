@@ -16,9 +16,8 @@
                 padding: 0;
                 overflow: hidden;
             }
-
-            #barCanvas, 
-            #lineCanvas {
+             
+            canvas {
                 position: fixed;
                 left: 0;
                 right: 0;
@@ -27,15 +26,14 @@
                 bottom: 0;
             }
 
-            #barCanvas {
-                
-                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000534+0,000020+100 */
-                background: #000534; /* Old browsers */
-                background: -moz-radial-gradient(center, ellipse cover,  #000534 0%, #000020 100%); /* FF3.6-15 */
-                background: -webkit-radial-gradient(center, ellipse cover,  #000534 0%,#000020 100%); /* Chrome10-25,Safari5.1-6 */
-                background: radial-gradient(ellipse at center,  #000534 0%,#000020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000534', endColorstr='#000020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            canvas:first-of-type {                
+                background: #2c3e50;
+                background: -moz-radial-gradient(center, ellipse cover,  #2c3e50 0%, #34495e 100%);
+                background: -webkit-radial-gradient(center, ellipse cover,  #2c3e50 0%,#34495e 100%);
+                background: radial-gradient(ellipse at center,  #2c3e50 0%,#34495e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#34495e',GradientType=1 );
             }
+
         </style>
 
         <!-- Dependencies -->
@@ -50,10 +48,10 @@
     </head>
 
     <body>
-        <canvas id="barCanvas">
+        <canvas id="lineCanvas">
         </canvas>
 
-        <canvas id="lineCanvas">
+        <canvas id="waveformCanvas">
         </canvas>
 
         <script src="index.js"></script>
