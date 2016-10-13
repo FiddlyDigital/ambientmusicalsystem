@@ -148,7 +148,7 @@
 
     function startLayer(instrument, destination) {
         var note = OCTAVE[getRandomInt(0, OCTAVE.length - 1)];
-        var oct = getRandomInt(1, 8);
+        var oct = getRandomInt(0, 8);
         var loopLength = getRandomFloat(0, 30);
         var loopDelay = getRandomFloat(0, loopLength / 2);
         startLoop(instrument, note, oct, destination, loopLength, loopDelay);
