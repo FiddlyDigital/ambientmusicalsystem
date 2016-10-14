@@ -8,6 +8,7 @@
     if (typeof define === "function" && define.amd) {
         // AMD
         define([
+            'MusicUtilities',
             'MusicSystemSamples', 
             'MusicSystemImpulses', 
             'MusicSystemVisualiser'
@@ -15,31 +16,32 @@
     } else if (typeof module === "object") {
         // Common JS
         module.exports = factory(
+            require('MusicUtilities'),
             require('MusicSystemSamples'), 
             require('MusicSystemImpulses'), 
             require('MusicSystemVisualiser'));
     } else {
         // Browser Globals (root is window)
         root.MusicSystem = factory(
+            root.MusicUtilities,
             root.MusicSystemSamples, 
             root.MusicSystemImpulses, 
             root.MusicSystemVisualiser
         );
     }
-}(this, function(SAMPLE_LIBRARY, IMPULSE_LIBRARY, VISUALISER) {
+}(this, function(UTILITIES, SAMPLE_LIBRARY, IMPULSE_LIBRARY, VISUALISER) {
     'use strict';
 
-    var OCTAVE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
     var audioContext = new AudioContext();
     var analyser;
 
     function getSample(instrument, note, octave) {
         var requestedOctave = parseInt(octave, 10);
-        var requestedNote = flatToSharp(note);
+        var requestedNote = UTILITIES.flatToSharp(note);
         var sampleBank = SAMPLE_LIBRARY[instrument];
         var sample = getNearestSample(sampleBank, requestedNote, requestedOctave);
 
-        var distance = getNoteDistance(requestedNote, requestedOctave, sample.note, sample.octave);
+        var distance = UTILITIES.getNoteDistance(requestedNote, requestedOctave, sample.note, sample.octave);
         return fetchSample(sample.file)
             .then(function(sampleAudioBuffer) {
                 return {
@@ -49,39 +51,14 @@
             });
     }
 
-    function flatToSharp(note) {
-        switch (note) {
-            case 'Bb':
-                return 'A#';
-            case 'Db':
-                return 'C#';
-            case 'Eb':
-                return 'D#';
-            case 'Gb':
-                return 'F#';
-            case 'Ab':
-                return 'G#';
-            default:
-                return note;
-        }
-    }
-
-    function noteValue(note, octave) {
-        return octave * 12 + OCTAVE.indexOf(note);
-    }
-
-    function getNoteDistance(note1, octave1, note2, octave2) {
-        return noteValue(note1, octave1) - noteValue(note2, octave2);
-    }
-
     function getNearestSample(sampleBank, note, octave) {
         var sortedBank = sampleBank.slice().sort(function(a, b) {
-            var distanceToA = Math.abs(getNoteDistance(
+            var distanceToA = Math.abs(UTILITIES.getNoteDistance(
                 note, octave,
                 a.note, a.octave
             ));
 
-            var distanceToB = Math.abs(getNoteDistance(
+            var distanceToB = Math.abs(UTILITIES.getNoteDistance(
                 note, octave,
                 b.note, b.octave
             ));
@@ -146,9 +123,7 @@
         return instruments[getRandomInt(0, instruments.length - 1)];
     }
 
-    function startLayer(instrument, destination) {
-        var note = OCTAVE[getRandomInt(0, OCTAVE.length - 1)];
-        var oct = getRandomInt(1, 7);
+    function startLayer(instrument, note, oct, destination) {
         var loopLength = getRandomFloat(0, 30);
         var loopDelay = getRandomFloat(0, loopLength / 2);
         startLoop(instrument, note, oct, destination, loopLength, loopDelay);
@@ -169,6 +144,8 @@
                 var instrument;
                 var layers;
                 var layerIdx;
+                var mode;
+                var modeNotes;
             
                 // global
                 analyser = audioContext.createAnalyser();
@@ -186,12 +163,29 @@
 
                 // Start Randomising
                 instrument = getRandominstrument();
-                layers = getRandomInt(1, 10);
-
                 console.log('Instrument: ' + instrument);
 
+                layers = getRandomInt(1, 10);
+
+                // Pick a random note and mode - then get the notes from that mode.
+                var note = UTILITIES.octaves[getRandomInt(0, UTILITIES.octaves.length - 1)];
+                var oct = getRandomInt(1, 7);
+
+                mode = UTILITIES.modes[getRandomInt(0, UTILITIES.modes.length)];
+                modeNotes = UTILITIES.getNotesInMode(note, mode);
+                
                 for (layerIdx = 0; layerIdx < layers; layerIdx++) {
-                    startLayer(instrument, convolver);
+                    if(modeNotes[layerIdx]) {
+                        if(modeNotes[layerIdx] === 'A' || getRandomInt(0,100) > 80){
+                            oct = oct + 1;
+
+                            if(oct > 8){
+                                oct = oct -2;
+                            }
+                        }
+
+                        startLayer(instrument, modeNotes[layerIdx], oct, convolver);
+                    }
                 }
 
                 // Start Drawing
