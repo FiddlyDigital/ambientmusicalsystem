@@ -141,6 +141,7 @@
                 var delay = audioContext.createDelay();
                 var feedback = audioContext.createGain();
                 var convolver = audioContext.createConvolver();
+                var compressor = audioContext.createDynamicsCompressor();
                 var instrument;
                 var layers;
                 var layerIdx;
@@ -154,18 +155,24 @@
                 delay.delayTime.value = getRandomFloat(0.1,1);
                 feedback.gain.value = getRandomFloat(0.1,1);                
                 convolver.buffer = convolverBuffer;
+                compressor.threshold.value = -40;
+                compressor.knee.value = 40;
+                compressor.ratio.value = 12;
+                compressor.attack.value = 0;
+                compressor.release.value = 0.25;
 
                 // Node Connections
                 delay.connect(feedback);
                 feedback.connect(convolver);
-                convolver.connect(analyser);
+                convolver.connect(compressor);
+                compressor.connect(analyser);
                 analyser.connect(audioContext.destination);
 
                 // Start Randomising
                 instrument = getRandominstrument();
                 console.log('Instrument: ' + instrument);
 
-                layers = getRandomInt(1, 10);
+                layers = getRandomInt(2, 10);
 
                 // Pick a random note and mode - then get the notes from that mode.
                 var note = UTILITIES.octaves[getRandomInt(0, UTILITIES.octaves.length - 1)];
