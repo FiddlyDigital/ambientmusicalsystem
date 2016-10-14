@@ -187,7 +187,7 @@
                             oct = oct + 1;
 
                             if(oct > 8){
-                                oct = oct -2;
+                                oct = getRandomInt(4,6);
                             }
                         }
 

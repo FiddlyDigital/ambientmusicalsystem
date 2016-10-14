@@ -121,8 +121,7 @@
                 break;
             case 'Locrian':
                 pattern = 'HFFHFFF';
-                break;
-            default:
+                break;            
         }
 
         return getNotesFromSteps(baseNote, pattern);
@@ -140,6 +139,7 @@
                     break;
                 case 'H':
                     placeHolder = getNextHalfStep(placeHolder);
+                    break;
             }
 
             notes.push(placeHolder);

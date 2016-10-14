@@ -12,7 +12,7 @@
 }(this, function() {
     'use strict';
 
-    var RT_LINE_COLOR = '#9b59b6';
+    var RT_LINE_COLOR = '#D9DDF6';
     var lineCanvas;
     var lineCanvasCtx;
     var barCanvas;
