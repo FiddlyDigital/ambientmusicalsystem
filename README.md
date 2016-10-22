@@ -1,24 +1,32 @@
 # Ambient Musical System
 A musical system inspired by the works of Philip Glass.
 
-A totally random system - each reload will yield a new musical experience.
-No refresh will ever be the same.
+## Description
+On each load, a random instrument, musical mode, key and reverb type are chosen.
+Notes are then played back at random intervals for an continously evolving ambient experience.
 
-On each load, a random reverb, instrument, notes  and note lengths are chosen to provide a unique ambient track.
+50% of the time it sounds terrible, but the other 50% is pretty poetic.
 
-## Prerequisites
-You need to download the Samples provided at the link below and put them in a 'Samples' folder in your project root.
-(Check MusicSystemSamples.js for paths if you're not sure here)
+## Setup and Running
 
-## Instructions for running
-* Pull code, then use http-server or similiar to host.
-* load index.html in your browser
-* Refresh to taste!
+### Prerequisites
+You need to download the required music sample files from http://sso.mattiaswestlund.net/download.html and extract the contents of the Samples folder in the zip to ~/src/assets/samples.
 
-## Samples
-* Please download from Sonatina Symphonic Orchestra - http://sso.mattiaswestlund.net/download.html
+### Install Dependencies
+* npm install
+* bower install
 
-## Impulse Responses
+### Run Development Version
+* npm run serve
+
+### Run Distribution Version
+* npm run build
+* npm run serve:dist
+
+## Notes
+### Impulse Responses
+* See ~/src/assets/impulse_responses
 * Courtesy of AirWindows - http://www.airwindows.com/airwindows-impulses/
 * (Converted from .AIFF to .WAV via http://www.zamzar.com/)
+
 

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ 
+canvas {
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    
+    &:first-of-type {                
+        background: #2c3e50;
+        background: -moz-radial-gradient(center, ellipse cover,  #2c3e50 0%, #34495e 100%);
+        background: -webkit-radial-gradient(center, ellipse cover,  #2c3e50 0%,#34495e 100%);
+        background: radial-gradient(ellipse at center,  #2c3e50 0%,#34495e 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#34495e',GradientType=1 );
+    }
+}
+
