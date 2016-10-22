@@ -29,4 +29,10 @@ You need to download the required music sample files from http://sso.mattiaswest
 * Courtesy of AirWindows - http://www.airwindows.com/airwindows-impulses/
 * (Converted from .AIFF to .WAV via http://www.zamzar.com/)
 
+### Disk Space
+The Samples take up 500mb+ when unzipped.
+When you do a build, these files will end up being copied into the dist too.
+If you're developing on Cloud9 IDE or hosting on a small server, you may run into problems with Disk space.
 
+I'm working on cutting down the amount of samples needed. 
+If you're stuck you can delete some instrument listings from ~/src/app/MusicSystemSamples.js and then delete the corresponding Sample files from ~src/assets/samples.
