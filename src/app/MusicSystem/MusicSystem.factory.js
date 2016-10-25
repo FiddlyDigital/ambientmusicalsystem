@@ -14,6 +14,7 @@
 
     function MusicSystem(UTILITIES, SAMPLE_LIBRARY, IMPULSE_LIBRARY, VISUALISER) {
         var audioContext = new AudioContext();
+        var audioDataCache = {};
         var analyser;
     
         function getSample(instrument, note, octave) {
@@ -51,13 +52,20 @@
         }
     
         function fetchSample(samplePath) {
-            return fetch(encodeURIComponent(samplePath))
-                .then(function(response) {
-                    return response.arrayBuffer();
-                })
-                .then(function(arrayBuffer) {
-                    return audioContext.decodeAudioData(arrayBuffer)
-                });
+            samplePath = encodeURIComponent(samplePath);
+            
+            if(audioDataCache[samplePath]) {
+                return audioDataCache[samplePath];
+            } else {
+                return fetch(samplePath)
+                    .then(function(response) {
+                        return response.arrayBuffer();
+                    })
+                    .then(function(arrayBuffer) {
+                        audioDataCache[samplePath] = audioContext.decodeAudioData(arrayBuffer);
+                        return audioDataCache[samplePath];
+                    });    
+            }
         }
     
         function playSample(instrument, note, octave, destination, delaySeconds) {
@@ -74,7 +82,6 @@
         }
     
         function startLoop(instrument, note, octave, destination, loopLengthSeconds, delaySeconds) {
-    
             playSample(instrument, note, octave, destination, delaySeconds);
     
             setInterval(function() {
@@ -88,11 +95,11 @@
             min = Math.ceil(min);
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min + 1)) + min;
-        };
+        }
     
         function getRandomFloat(min, max) {
             return Math.random() * (max - min) + min;
-        };
+        }
     
         function getRandominstrument() {
             var instruments = [];
