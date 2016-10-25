@@ -30,7 +30,7 @@ function watch(done) {
     'bower.json'
   ], gulp.parallel('inject'));
 
-  gulp.watch(conf.path.src('app/**/*.html'), gulp.series('partials', reloadBrowserSync));
+  gulp.watch(conf.path.src(conf.ngModule + '/**/*.html'), gulp.series('partials', reloadBrowserSync));
   gulp.watch([
     conf.path.src('**/*.less'),
     conf.path.src('**/*.css')
