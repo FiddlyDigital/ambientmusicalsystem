@@ -66,64 +66,6 @@
             octave: 6
         }];
 
-        Samples['1st-violins-piz-rr2'] = [{
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-a#5.wav',
-            note: 'A#',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-a#6.wav',
-            note: 'A#',
-            octave: 6
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-c#6.wav',
-            note: 'C#',
-            octave: 6
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-e6.wav',
-            note: 'E',
-            octave: 6
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-g5.wav',
-            note: 'G',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-piz-rr2-g6.wav',
-            note: 'G',
-            octave: 6
-        }];
-
         Samples['1st-violins-stc-rr1'] = [{
             file: 'assets/samples/1st Violins/1st-violins-stc-rr1-a#3.wav',
             note: 'A#',
@@ -178,64 +120,6 @@
             octave: 5
         }, {
             file: 'assets/samples/1st Violins/1st-violins-stc-rr1-g6.wav',
-            note: 'G',
-            octave: 6
-        }];
-
-        Samples['1st-violins-stc-rr2'] = [{
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-a#5.wav',
-            note: 'A#',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-a#6.wav',
-            note: 'A#',
-            octave: 6
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-c#6.wav',
-            note: 'C#',
-            octave: 6
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-e6.wav',
-            note: 'E',
-            octave: 6
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-g5.wav',
-            note: 'G',
-            octave: 5
-        }, {
-            file: 'assets/samples/1st Violins/1st-violins-stc-rr2-g6.wav',
             note: 'G',
             octave: 6
         }];
@@ -355,65 +239,7 @@
             note: 'G',
             octave: 6
         }];
-
-        Samples['2nd-violins-piz-rr2'] = [{
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-a#5.wav',
-            note: 'A#',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-a#6.wav',
-            note: 'A#',
-            octave: 6
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-c#6.wav',
-            note: 'C#',
-            octave: 6
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-e6.wav',
-            note: 'E',
-            octave: 6
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-g5.wav',
-            note: 'G',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-piz-rr2-g6.wav',
-            note: 'G',
-            octave: 6
-        }];
-
+        
         Samples['2nd-violins-stc-rr1'] = [{
             file: 'assets/samples/2nd Violins/2nd-violins-stc-rr1-a#3.wav',
             note: 'A#',
@@ -468,64 +294,6 @@
             octave: 5
         }, {
             file: 'assets/samples/2nd Violins/2nd-violins-stc-rr1-g6.wav',
-            note: 'G',
-            octave: 6
-        }];
-
-        Samples['2nd-violins-stc-rr2'] = [{
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-a#5.wav',
-            note: 'A#',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-a#6.wav',
-            note: 'A#',
-            octave: 6
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-c#6.wav',
-            note: 'C#',
-            octave: 6
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-e6.wav',
-            note: 'E',
-            octave: 6
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-g5.wav',
-            note: 'G',
-            octave: 5
-        }, {
-            file: 'assets/samples/2nd Violins/2nd-violins-stc-rr2-g6.wav',
             note: 'G',
             octave: 6
         }];
@@ -671,7 +439,9 @@
             note: 'D',
             octave: 5
         }, {
-            file: 'assets/samples/Bass Clarinet/bass_clarinet-f2.wav'
+            file: 'assets/samples/Bass Clarinet/bass_clarinet-f2.wav',
+            note: 'F',
+            octave: 2
         }, {
             file: 'assets/samples/Bass Clarinet/bass_clarinet-f3.wav',
             note: 'F',
@@ -802,64 +572,6 @@
             octave: 2
         }];
 
-        Samples['basses-piz-rr2'] = [{
-            file: 'assets/samples/Basses/basses-piz-rr1-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-a2.wav',
-            note: 'A',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-d#2.wav',
-            note: 'D#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-f#2.wav',
-            note: 'F#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-piz-rr2-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }];
-
         Samples['basses-stc-rr1'] = [{
             file: 'assets/samples/Basses/basses-stc-rr1-a1.wav',
             note: 'A',
@@ -910,60 +622,6 @@
             octave: 2
         }, {
             file: 'assets/samples/Basses/basses-stc-rr1-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }];
-
-        Samples['basses-stc-rr2'] = [{
-            file: 'assets/samples/Basses/basses-stc-rr2-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-a2.wav',
-            note: 'A',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-d#2.wav',
-            note: 'D#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-f#2.wav',
-            note: 'F#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Basses/basses-stc-rr2-f#3.wav',
             note: 'F#',
             octave: 3
         }];
@@ -1195,61 +853,7 @@
             note: 'F#',
             octave: 4
         }];
-
-        Samples['celli-piz-rr2'] = [{
-            file: 'assets/samples/Celli/celli-piz-rr2-a2.wav',
-            note: 'A',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-a4.wav',
-            note: 'A',
-            octave: 4
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-c5.wav',
-            note: 'C',
-            octave: 5
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-d#2.wav',
-            note: 'D#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-d#4.wav',
-            note: 'D#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-f#2.wav',
-            note: 'F#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-piz-rr2-f#4.wav',
-            note: 'F#',
-            octave: 4
-        }];
-
+        
         Samples['celli-stc-rr1'] = [{
             file: 'assets/samples/Celli/celli-stc-rr1-a2.wav',
             note: 'A',
@@ -1300,60 +904,6 @@
             octave: 3
         }, {
             file: 'assets/samples/Celli/celli-stc-rr1-f#4.wav',
-            note: 'F#',
-            octave: 4
-        }];
-
-        Samples['celli-stc-rr2'] = [{
-            file: 'assets/samples/Celli/celli-stc-rr2-a2.wav',
-            note: 'A',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-a4.wav',
-            note: 'A',
-            octave: 4
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-c5.wav',
-            note: 'C',
-            octave: 5
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-d#2.wav',
-            note: 'D#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-d#4.wav',
-            note: 'D#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-f#2.wav',
-            note: 'F#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Celli/celli-stc-rr2-f#4.wav',
             note: 'F#',
             octave: 4
         }];
@@ -1476,178 +1026,6 @@
             file: 'assets/samples/Cello/cello-f#5.wav',
             note: 'F#',
             octave: 5
-        }];
-
-        Samples['chorus-female'] = [{
-            file: 'assets/samples/Chorus/chorus-female-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-a#5.wav',
-            note: 'A#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-a4.wav',
-            note: 'A',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-a5.wav',
-            note: 'A',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-b4.wav',
-            note: 'B',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-b5.wav',
-            note: 'B',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-c5.wav',
-            note: 'C',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-c6.wav',
-            note: 'C',
-            octave: 6
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-d#5.wav',
-            note: 'D#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-d5.wav',
-            note: 'D',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-f#5.wav',
-            note: 'F#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-f5.wav',
-            note: 'F',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-g#4.wav',
-            note: 'G#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-g#5.wav',
-            note: 'G#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-g4.wav',
-            note: 'G',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-female-g5.wav',
-            note: 'G',
-            octave: 5
-        }];
-
-        Samples['chorus-male'] = [{
-            file: 'assets/samples/Chorus/chorus-male-a#2.wav',
-            note: 'A#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-a2.wav',
-            note: 'A',
-            octave: 2
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-b2.wav',
-            note: 'B',
-            octave: 2
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-b3.wav',
-            note: 'B',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-c#3.wav',
-            note: 'C#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-d#4.wav',
-            note: 'D#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-d3.wav',
-            note: 'D',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-d4.wav',
-            note: 'D',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-e3.wav',
-            note: 'E',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-f#4.wav',
-            note: 'F#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-f3.wav',
-            note: 'F',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-f4.wav',
-            note: 'F',
-            octave: 4
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-g#2.wav',
-            note: 'G#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-g#3.wav',
-            note: 'G#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-g2.wav',
-            note: 'G',
-            octave: 2
-        }, {
-            file: 'assets/samples/Chorus/chorus-male-g3.wav',
-            note: 'G',
-            octave: 3
         }];
 
         Samples['clarinet'] = [{
@@ -1950,56 +1328,6 @@
             octave: 4
         }, {
             file: 'assets/samples/Flutes/flutes-stc-rr1-f#5.wav',
-            note: 'F#',
-            octave: 5
-        }];
-
-        Samples['flutes-stc-rr2'] = [{
-            file: 'assets/samples/Flutes/flutes-stc-rr2-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-a4.wav',
-            note: 'A',
-            octave: 4
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-a5.wav',
-            note: 'A',
-            octave: 5
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-c5.wav',
-            note: 'C',
-            octave: 5
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-d#4.wav',
-            note: 'D#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-d#5.wav',
-            note: 'D#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-f#4.wav',
-            note: 'F#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Flutes/flutes-stc-rr2-f#5.wav',
             note: 'F#',
             octave: 5
         }];
@@ -2476,52 +1804,6 @@
             octave: 4
         }];
 
-        Samples['horns-stc-rr2'] = [{
-            file: 'assets/samples/Horns/horns-stc-rr2-a#2.wav',
-            note: 'A#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-c#3.wav',
-            note: 'C#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-e2.wav',
-            note: 'E',
-            octave: 2
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-e3.wav',
-            note: 'E',
-            octave: 3
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-g2.wav',
-            note: 'G',
-            octave: 2
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/Horns/horns-stc-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }];
-
         Samples['horns-sus'] = [{
             file: 'assets/samples/Horns/horns-sus-a#2.wav',
             note: 'A#',
@@ -2764,138 +2046,6 @@
             octave: 5
         }];
 
-        Samples['timpani-f-lh'] = [{
-            file: 'assets/samples/Percussion/timpani-f-lh-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-lh-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-lh-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-lh-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-lh-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }];
-
-        Samples['timpani-f-rh'] = [{
-            file: 'assets/samples/Percussion/timpani-f-rh-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-rh-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-rh-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-rh-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-f-rh-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }];
-
-        Samples['timpani-p-lh'] = [{
-            file: 'assets/samples/Percussion/timpani-p-lh-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-lh-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-lh-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-lh-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-lh-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }];
-
-        Samples['timpani-p-rh'] = [{
-            file: 'assets/samples/Percussion/timpani-p-rh-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-rh-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-rh-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-rh-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-p-rh-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }];
-
-        Samples['timpani-roll'] = [{
-            file: 'assets/samples/Percussion/timpani-roll-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }];
-
-        Samples['timpani-roll-crsc'] = [{
-            file: 'assets/samples/Percussion/timpani-roll-crsc-a1.wav',
-            note: 'A',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-crsc-c1.wav',
-            note: 'C',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-crsc-c2.wav',
-            note: 'C',
-            octave: 2
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-crsc-d#1.wav',
-            note: 'D#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Percussion/timpani-roll-crsc-f#1.wav',
-            note: 'F#',
-            octave: 1
-        }];
-
         Samples['xylophone'] = [{
             file: 'assets/samples/Percussion/Xylophone-a#2.wav',
             note: 'A#',
@@ -3100,60 +2250,6 @@
             octave: 4
         }];
 
-        Samples['trombones-stc-rr2'] = [{
-            file: 'assets/samples/Trombones/trombones-stc-rr2-a#2.wav',
-            note: 'A#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-c#3.wav',
-            note: 'C#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-e2.wav',
-            note: 'E',
-            octave: 2
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-e3.wav',
-            note: 'E',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-g2.wav',
-            note: 'G',
-            octave: 2
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trombones/trombones-stc-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }];
-
         Samples['trombones-sus'] = [{
             file: 'assets/samples/Trombones/trombones-sus-a#2.wav',
             note: 'A#',
@@ -3316,60 +2412,6 @@
             octave: 5
         }];
 
-        Samples['trumpets-stc-rr2'] = [{
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-a#4.wav',
-            note: 'A#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-a#5.wav',
-            note: 'A#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-c#5.wav',
-            note: 'C#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-c#6.wav',
-            note: 'C#',
-            octave: 6
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-e3.wav',
-            note: 'E',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-e4.wav',
-            note: 'E',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-e5.wav',
-            note: 'E',
-            octave: 5
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-e6.wav',
-            note: 'E',
-            octave: 6
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-g4.wav',
-            note: 'G',
-            octave: 4
-        }, {
-            file: 'assets/samples/Trumpets/trumpets-stc-rr2-g5.wav',
-            note: 'G',
-            octave: 5
-        }];
-
         Samples['trumpets-sus'] = [{
             file: 'assets/samples/Trumpets/trumpets-sus-a#3.wav',
             note: 'A#',
@@ -3474,56 +2516,6 @@
             octave: 3
         }];
 
-        Samples['tuba-stc-rr2'] = [{
-            file: 'assets/samples/Tuba/tuba-stc-rr2-a#1.wav',
-            note: 'A#',
-            octave: 1
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-a#2.wav',
-            note: 'A#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-a#3.wav',
-            note: 'A#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-c#2.wav',
-            note: 'C#',
-            octave: 2
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-c#3.wav',
-            note: 'C#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-c#4.wav',
-            note: 'C#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-e1.wav',
-            note: 'E',
-            octave: 1
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-e2.wav',
-            note: 'E',
-            octave: 2
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-e3.wav',
-            note: 'E',
-            octave: 3
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-g1.wav',
-            note: 'G',
-            octave: 1
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-g2.wav',
-            note: 'G',
-            octave: 2
-        }, {
-            file: 'assets/samples/Tuba/tuba-stc-rr2-g3.wav',
-            note: 'G',
-            octave: 3
-        }];
-
         Samples['tuba-sus'] = [{
             file: 'assets/samples/Tuba/tuba-sus-a#1.wav',
             note: 'A#',
@@ -3624,60 +2616,6 @@
             octave: 4
         }, {
             file: 'assets/samples/Violas/violas-piz-rr1-f#5.wav',
-            note: 'F#',
-            octave: 5
-        }];
-
-        Samples['violas-piz-rr2'] = [{
-            file: 'assets/samples/Violas/violas-piz-rr2-a3.wav',
-            note: 'A',
-            octave: 3
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-a4.wav',
-            note: 'A',
-            octave: 4
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-a5.wav',
-            note: 'A',
-            octave: 5
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-c3.wav',
-            note: 'C',
-            octave: 3
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-c4.wav',
-            note: 'C',
-            octave: 4
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-c5.wav',
-            note: 'C',
-            octave: 5
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-c6.wav',
-            note: 'C',
-            octave: 6
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-d#3.wav',
-            note: 'D#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-d#4.wav',
-            note: 'D#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-d#5.wav',
-            note: 'D#',
-            octave: 5
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-f#3.wav',
-            note: 'F#',
-            octave: 3
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-f#4.wav',
-            note: 'F#',
-            octave: 4
-        }, {
-            file: 'assets/samples/Violas/violas-piz-rr2-f#5.wav',
             note: 'F#',
             octave: 5
         }];
