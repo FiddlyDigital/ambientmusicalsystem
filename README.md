@@ -9,9 +9,6 @@ Notes are then played back at random intervals for an continously evolving ambie
 
 ## Setup and Running
 
-### Prerequisites
-You need to download the required music sample files from http://sso.mattiaswestlund.net/download.html and extract the contents of the Samples folder in the zip to ~/src/assets/samples.
-
 ### Install Dependencies
 * npm install
 * bower install
@@ -29,10 +26,11 @@ You need to download the required music sample files from http://sso.mattiaswest
 * Courtesy of AirWindows - http://www.airwindows.com/airwindows-impulses/
 * (Converted from .AIFF to .WAV via http://www.zamzar.com/)
 
-### Disk Space
-The Samples take up 500mb+ when unzipped.
-When you do a build, these files will end up being copied into the dist too.
-If you're developing on Cloud9 IDE or hosting on a small server, you may run into problems with Disk space.
+### Samples
+In order to help with Disk Space issues, I've copied ALL of the audio samples to my Dropbox Public Folder.
+If you run the application as-is, it will retrive them there.
 
-I'm working on cutting down the amount of samples needed. 
-If you're stuck you can delete some instrument listings from ~/src/app/MusicSystemSamples.js and then delete the corresponding Sample files from ~src/assets/samples.
+If you'd prefer, you can download them from http://sso.mattiaswestlund.net/download.html
+Then you can refer to them locally (put them into ~/src/assests/samples/) or host it yourself on another server.
+
+You can then modify ~/src/app/app.component.js - I've samples of how to refer locally and to another server there.

@@ -16,6 +16,7 @@
         var audioContext = new AudioContext();
         var audioDataCache = {};
         var analyser;
+        var sampleLocationPrefix;
     
         function getSample(instrument, note, octave) {
             var requestedOctave = parseInt(octave, 10);
@@ -24,7 +25,7 @@
             var sample = getNearestSample(sampleBank, requestedNote, requestedOctave);
     
             var distance = UTILITIES.getNoteDistance(requestedNote, requestedOctave, sample.note, sample.octave);
-            return fetchSample(sample.file)
+            return fetchSample(sample.file, true)
                 .then(function(sampleAudioBuffer) {
                     return {
                         audioBuffer: sampleAudioBuffer,
@@ -51,8 +52,17 @@
             return sortedBank[0];
         }
     
-        function fetchSample(samplePath) {
+        // FD: appendSampleLocationPrefix will be true for Fetching Audio Samples but not Impulse Samples!
+        function fetchSample(samplePath, appendSampleLocationPrefix) {
+            
+            // Encod eout path so we can look for files with sharps/'#' in them
             samplePath = encodeURIComponent(samplePath);
+            
+            // we have to append the prefix AFTER encoding the rest of the URI
+            // Otherwise fetch wont be able to determine if the URL is a relative or absolute one
+            if(appendSampleLocationPrefix){
+                samplePath = sampleLocationPrefix + samplePath;
+            }
             
             if(audioDataCache[samplePath]) {
                 return audioDataCache[samplePath];
@@ -120,12 +130,18 @@
             console.log('Note: ' + note + '' + oct + ' [' + loopLength + '/' + loopDelay + ']');
         }
     
-        function startMusic() {
+        function startMusic(samplesBasePath) {
             // Get a random Impulse Sample for the Convolver Reverb
             var impulse = IMPULSE_LIBRARY[getRandomInt(0, IMPULSE_LIBRARY.length -1)];
-            console.log('Impulse: ' + impulse.name);
     
-            fetchSample(impulse.file)
+            // if the user provides a path to where samples are hosted, use that
+            if(!samplesBasePath){
+                sampleLocationPrefix = 'assets/samples/';
+            } else {
+                sampleLocationPrefix = samplesBasePath;
+            }
+    
+            fetchSample(impulse.file, false)
                 .then(function(convolverBuffer) {
                     var delay = audioContext.createDelay();
                     var feedback = audioContext.createGain();
