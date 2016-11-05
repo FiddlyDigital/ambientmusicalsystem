@@ -1,5 +1,6 @@
 {
   "name": "ambientmusicalsystem",
+  "version": "0.0.2",
   "description": "Random Ambient Music Generator",
   "authors": [
     "FiddlyDigital"
