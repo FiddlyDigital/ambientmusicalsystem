@@ -10,6 +10,7 @@ Notes are then played back at random intervals for an continously evolving ambie
 ## Setup and Running
 
 ### Install Dependencies
+* npm install --global gulp-cli
 * npm install
 * bower install
 

@@ -1,0 +1,14 @@
+{
+  "name": "ambientmusicalsystem",
+  "version": "0.0.2",
+  "dependencies": {
+    "glob-stream" :{
+      "version": "5.3.5",
+      "dependencies" : {
+        "glob-parent" : {
+          "version" : "3.0.0"
+        }
+      }
+    }
+  }
+}
