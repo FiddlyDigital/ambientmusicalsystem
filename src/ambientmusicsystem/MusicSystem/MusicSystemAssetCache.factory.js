@@ -2,13 +2,17 @@
 (function() {
     'use strict';
     
-    angular.module('app').
-        factory('MusicSystemAssetCache', [
+    angular.module('ambientmusicsystem').
+        factory('AssetCache', [
             '$q', 
-            MusicSystemAssetCache
+            AssetCache
         ]);
     
-    function MusicSystemAssetCache($q) {
+    // FD: TODO: Investigate if all of this could go into a webworker
+    // Also need to work out a system where if 2 request are made for the same 
+    // file, we only make 1 http request out...
+    
+    function AssetCache($q) {
         var assetCacheVersion = -1;
         var assetCacheDBName = 'AssetCache'
         var assetCacheObjectStoreName = 'Samples';

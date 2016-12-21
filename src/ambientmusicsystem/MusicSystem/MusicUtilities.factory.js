@@ -2,10 +2,10 @@
 (function() {
     'use strict';
     
-    angular.module('app').
-        factory('MusicUtilities', MusicUtilities);
+    angular.module('ambientmusicsystem').
+        factory('Utilities', Utilities);
     
-    function MusicUtilities() {
+    function Utilities() {
         var OCTAVE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
         var MODES = ['Ionian', 'Dorian', 'Phrygian', 'Lydian', 'Mixolydian', 'Aeolian', 'Locrian'];
     

@@ -11,7 +11,7 @@
 const path = require('path');
 const gutil = require('gulp-util');
 
-exports.ngModule = 'app';
+exports.ngModule = 'ambientmusicsystem';
 
 /**
  *  The main paths of your project handle these with care
@@ -21,7 +21,8 @@ exports.paths = {
   dist: 'dist',
   tmp: '.tmp',
   e2e: 'e2e',
-  tasks: 'gulp_tasks'
+  tasks: 'gulp_tasks',
+  bower: 'bower_components'
 };
 
 exports.path = {};

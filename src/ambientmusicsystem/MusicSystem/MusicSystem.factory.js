@@ -2,13 +2,13 @@
 (function() {
     'use strict';
     
-    angular.module('app').
+    angular.module('ambientmusicsystem').
         factory('MusicSystem', [ 
-            'MusicUtilities',
-            'MusicSystemSamples', 
-            'MusicSystemImpulses',
-            'MusicSystemAssetCache',
-            'MusicSystemVisualiser',
+            'Utilities',
+            'Samples', 
+            'Impulses',
+            'AssetCache',
+            'Visualiser',
             MusicSystem
         ]);
     
@@ -112,21 +112,17 @@
         };
     
         function startMusic(samplesBasePath, dbVersion) {
-            if(!samplesBasePath){
-                sampleLocationPrefix = 'assets/';
-            } else {
-                sampleLocationPrefix = samplesBasePath;
-            }
-            
+            sampleLocationPrefix = samplesBasePath || 'assets/'
             dbVersion = dbVersion || 1;
-            
             audioContext = new AudioContext();
                 
+            // FD: Create/Init the Asset Cache
             ASSET_CACHE.init(dbVersion, sampleLocationPrefix, audioContext)
                 .then(function() {
                     // Get a random Impulse Sample for the Convolver Reverb
                     var impulse = IMPULSES_INDEX[getRandomInt(0, IMPULSES_INDEX.length -1)];
             
+                    // FD: Go get the impulse-response (from cache if possible, from url if not)
                     ASSET_CACHE.fetchAsset(impulse.file)
                         .then(function(convolverBuffer) {
                             var delay = audioContext.createDelay();
