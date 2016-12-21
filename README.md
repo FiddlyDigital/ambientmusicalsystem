@@ -22,16 +22,23 @@ Notes are then played back at random intervals for an continously evolving ambie
 * npm run serve:dist
 
 ## Notes
+### Builds
+Builds will output 
+* An optimised, minified and obfuscated version of the application.
+* A Zip file, containing the above.
+
 ### Impulse Responses
-* See ~/src/assets/impulse_responses
 * Courtesy of AirWindows - http://www.airwindows.com/airwindows-impulses/
 * (Converted from .AIFF to .WAV via http://www.zamzar.com/)
 
 ### Samples
-In order to help with Disk Space issues, I've copied ALL of the audio samples to my Dropbox Public Folder.
-If you run the application as-is, it will retrive them there.
+The application has the ability to load the audio samples either from a local source or remotely.
+In order to help with Disk Space issues, I've copied ALL of the audio samples to my Dropbox Public Folder and set that as the default remote location.
 
-If you'd prefer, you can download them from http://sso.mattiaswestlund.net/download.html
+Before checking a local/remote, the application checks to see if it has the file in it's Cache (semi-permanent IndexedDB).
+If so it will use the cached version, otherwise it will fetch from the local/remote source.
+
+The sample have been sourced from http://sso.mattiaswestlund.net/download.html
 Then you can refer to them locally (put them into ~/src/assests/samples/) or host it yourself on another server.
 
-You can then modify ~/src/app/app.component.js - I've samples of how to refer locally and to another server there.
+If you want to use other samples, you'll need to modify the SamplesIndex and specify a differant remote path.

@@ -29,7 +29,7 @@ gulp.task('bump', () => {
     }
 
     return gulp
-        .src(['./package.json', './bower.json'])
+        .src(['./package.json', './bower.json', './npm-shrinkwrap.json'])
         .pipe(bump(options))
         .pipe(gulp.dest('./'));
 });

@@ -3,9 +3,9 @@
     'use strict';
 
     angular.module('app').
-        factory('MusicSystemSamples', MusicSystemSamples);
+        factory('MusicSystemSamples', SamplesIndex);
 
-    function MusicSystemSamples() {
+    function SamplesIndex() {
         var Samples = {};
 
         Samples['1st-violins-piz-rr1'] = [{
