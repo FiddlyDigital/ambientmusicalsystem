@@ -97,11 +97,10 @@
                     
                     fetch(fullFilePath)
                         .then(function(response) { 
-                            if(response.status == 200 || response.status == 301){
+                            if (response.status == 200 || response.status == 301){
                                 // parse response
                                 return response.arrayBuffer();  
-                            }
-                            else{
+                            } else {
                                 throw new Error('Unable to read file');
                             }
                         })
