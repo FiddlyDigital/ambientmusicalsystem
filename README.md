@@ -10,22 +10,34 @@ Notes are then played back at random intervals for an continously evolving ambie
 ## Setup and Running
 
 ### Install Dependencies
-* npm install --global gulp-cli
-* npm install
-* bower install
+```
+npm install --global gulp-cli
+npm install
+bower install
+```
 
 ### Run Development Version
-* npm run serve
+```
+npm run serve
+```
 
 ### Run Distribution Version
-* npm run build
-* npm run serve:dist
+``` 
+npm run build
+npm run serve:dist
+```
 
 ## Notes
 ### Builds
 Builds will output 
 * An optimised, minified and obfuscated version of the application.
 * A Zip file, containing the above.
+
+### Docs
+A comprehensive set of docs can be generate via:
+```
+npm run docs 
+```
 
 ### Impulse Responses
 * Courtesy of AirWindows - http://www.airwindows.com/airwindows-impulses/

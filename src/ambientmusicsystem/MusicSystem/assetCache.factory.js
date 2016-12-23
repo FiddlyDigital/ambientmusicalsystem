@@ -10,7 +10,7 @@
     AssetCache.$inject = ['$q'];
     
     /**
-     * @namespace AssetCache
+     * @class AssetCache
      * @desc After 1st load caches assets in an IndexedDB
      * @memberOf Factories
      */
@@ -56,10 +56,9 @@
             return defer.promise;
         };
         
-        ////////////
-        
         /**
          * @name init
+         * @function init
          * @desc Create the IndexDB if it doesn't already exist
          * @param {number} dbVersion Current Working Version of our IndexedDB
          * @param {string} basePath The root url to prepend to all file requests
@@ -91,6 +90,7 @@
         /**
          * Tries to retrieve and decode audio from cache if exists, or from remote URL if doesn't
          * @name fetchAsset
+         * @function fetchAsset
          * @param {string} filepath The audio file to retrieve
          * @returns {object} Promise with the decoded audio data
          * @memberOf Factories.AssetCache

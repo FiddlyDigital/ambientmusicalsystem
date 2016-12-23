@@ -10,6 +10,7 @@ const hub = new HubRegistry([conf.path.tasks('*.js')]);
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
 
+gulp.task('docs', gulp.series('docs'));
 gulp.task('inject', gulp.series(gulp.parallel('styles', 'scripts'), 'inject'));
 gulp.task('build', gulp.series('partials', gulp.parallel('inject', 'other'), 'build', 'zip'));
 gulp.task('test', gulp.series('scripts', 'karma:single-run'));
@@ -18,6 +19,7 @@ gulp.task('serve', gulp.series('inject', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
+
 
 function reloadBrowserSync(cb) {
   browserSync.reload();
