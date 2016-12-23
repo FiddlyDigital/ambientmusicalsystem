@@ -2,8 +2,7 @@
 (function() {
     'use strict';
 
-    angular.module('ambientmusicsystem').
-        factory('Samples', SamplesIndex);
+    angular.module('ambientmusicsystem').factory('Samples', SamplesIndex);
 
     function SamplesIndex() {
         var Samples = {};

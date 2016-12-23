@@ -2,11 +2,9 @@
 (function() {
     'use strict';
     
-    angular.module('ambientmusicsystem').
-        factory('Visualiser', Visualiser);
+    angular.module('ambientmusicsystem').factory('Visualiser', Visualiser);
     
     function Visualiser() {
-
         var RT_LINE_COLOR = '#D9DDF6';
         var lineCanvas;
         var lineCanvasCtx;

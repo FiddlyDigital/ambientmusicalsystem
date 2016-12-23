@@ -18,7 +18,10 @@
             // (This is FiddlyDigital's dropbox, but you can point to any other server instead...)
             var assetsRoot = 'https://dl.dropboxusercontent.com/u/69704724/';
             var dbVersion = 2;
-            MusicSystem.start(assetsRoot, dbVersion);  
+            MusicSystem.init(assetsRoot, dbVersion)
+                .then(function(){
+                    MusicSystem.start(null);    
+                });
         }
     };
 })();

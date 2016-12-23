@@ -2,8 +2,7 @@
 (function() {
     'use strict';
     
-    angular.module('ambientmusicsystem').
-        factory('Utilities', Utilities);
+    angular.module('ambientmusicsystem').factory('Utilities', Utilities);
     
     function Utilities() {
         var OCTAVE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];

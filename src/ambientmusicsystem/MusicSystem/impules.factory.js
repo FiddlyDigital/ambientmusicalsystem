@@ -2,8 +2,7 @@
 (function() {
     'use strict';
 
-    angular.module('ambientmusicsystem').
-        factory('Impulses', ImpulsesIndex);
+    angular.module('ambientmusicsystem').factory('Impulses', ImpulsesIndex);
 
     function ImpulsesIndex() {
         var Impulses = [{

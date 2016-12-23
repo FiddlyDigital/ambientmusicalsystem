@@ -1,28 +1,29 @@
 /* global window angular fetch AudioContext*/
+
+/** AssetCache Factory
+ * @namespace Factories
+ */
 (function() {
     'use strict';
     
-    angular.module('ambientmusicsystem').
-        factory('AssetCache', [
-            '$q', 
-            AssetCache
-        ]);
+    angular.module('ambientmusicsystem').factory('AssetCache', AssetCache);
+    AssetCache.$inject = ['$q'];
     
-    // FD: TODO: Investigate if all of this could go into a webworker
-    // Also need to work out a system where if 2 request are made for the same 
-    // file, we only make 1 http request out...
-    
+    /**
+     * @namespace AssetCache
+     * @desc After 1st load caches assets in an IndexedDB
+     * @memberOf Factories
+     */
     function AssetCache($q) {
         var assetCacheVersion = -1;
-        var assetCacheDBName = 'AssetCache'
+        var assetCacheDBName = 'AssetCache';
         var assetCacheObjectStoreName = 'Samples';
         
         var audioContext = null;
         var db = null;
         var filePrefix = '';
         
-        // FD: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
-        function indexedDBInit(){
+        function setupIndexedDB(){
             try
             {
                 window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
@@ -34,27 +35,6 @@
             }
             
             return window.indexedDB;
-        };
-        
-        function initAssetCacheIfPossible (dbVersion, basePath, baseAudioContext) {
-            var defer = $q.defer();
-            
-            assetCacheVersion = dbVersion;
-            filePrefix = basePath || '';
-            audioContext = baseAudioContext || new AudioContext();
-            
-            if(indexedDBInit()){
-                initAssetCache()
-                    .then(function(result){
-                        db = result;    
-                        defer.resolve();
-                    });
-            } else {
-                defer.reject();
-                throw new Error("Unable to init Asset Cache - IndexedDB is not supported");
-            }
-            
-            return defer.promise;
         };
         
         function initAssetCache() {
@@ -75,9 +55,46 @@
             
             return defer.promise;
         };
-
-        // FD: use file path as key to retrieve the decodedAudio ArrayBuffer
-        // If key does not exist, go and get it from the remote asset URL
+        
+        ////////////
+        
+        /**
+         * @name init
+         * @desc Create the IndexDB if it doesn't already exist
+         * @param {number} dbVersion Current Working Version of our IndexedDB
+         * @param {string} basePath The root url to prepend to all file requests
+         * @param {object} rootAudioContext Existing AudioContext for decoding audio data
+         * @returns {object} Promise
+         * @memberOf Factories.AssetCache
+         */ 
+        function init (dbVersion, basePath, rootAudioContext) {
+            var defer = $q.defer();
+            
+            assetCacheVersion = dbVersion;
+            filePrefix = basePath || '';
+            audioContext = rootAudioContext || new AudioContext();
+            
+            if(setupIndexedDB()){
+                initAssetCache()
+                    .then(function(result){
+                        db = result;    
+                        defer.resolve();
+                    });
+            } else {
+                defer.reject();
+                throw new Error("Unable to init Asset Cache - IndexedDB is not supported");
+            }
+            
+            return defer.promise;
+        };
+        
+        /**
+         * Tries to retrieve and decode audio from cache if exists, or from remote URL if doesn't
+         * @name fetchAsset
+         * @param {string} filepath The audio file to retrieve
+         * @returns {object} Promise with the decoded audio data
+         * @memberOf Factories.AssetCache
+         */ 
         function fetchAsset(filepath) {
             var defer = $q.defer();
             var readTransaction = db.transaction([assetCacheObjectStoreName]);
@@ -147,7 +164,7 @@
         };
         
         return {
-            init : initAssetCacheIfPossible,
+            init : init,
             fetchAsset : fetchAsset
         };
     };
