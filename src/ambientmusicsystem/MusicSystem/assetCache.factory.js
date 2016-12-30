@@ -1,7 +1,7 @@
 /* global window angular fetch AudioContext*/
 
 /** AssetCache Factory
- * @namespace Factories
+ * @namespace AmbientMusicSystem.MusicSystem
  */
 (function() {
     'use strict';
@@ -12,7 +12,7 @@
     /**
      * @class AssetCache
      * @desc After 1st load caches assets in an IndexedDB
-     * @memberOf Factories
+     * @memberOf AmbientMusicSystem.MusicSystem
      */
     function AssetCache($q) {
         var assetCacheVersion = -1;
@@ -23,6 +23,13 @@
         var db = null;
         var filePrefix = '';
         
+        /**
+         * @function setupIndexedDB
+         * @private
+         * @desc Checks Browser support of IndexedDB
+         * @returns {object} Reference to browser implementation of IndexedDB
+         * @memberOf AmbientMusicSystem.MusicSystem.AssetCache
+         */
         function setupIndexedDB(){
             try
             {
@@ -31,12 +38,19 @@
                 window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
             }
             catch(exc){
-                
+                // FD: TODO:
             }
             
             return window.indexedDB;
         };
         
+        /**
+         * @function initAssetCache
+         * @private
+         * @desc Create the IndexDB if it doesn't already exist or Upgrading existing DB if necessary 
+         * @returns {object} Promise
+         * @memberOf AmbientMusicSystem.MusicSystem.AssetCache
+         */
         function initAssetCache() {
             var defer = $q.defer();
             
@@ -57,14 +71,14 @@
         };
         
         /**
-         * @name init
          * @function init
-         * @desc Create the IndexDB if it doesn't already exist
+         * @public
+         * @desc Checks if browser supports IndexedDB then tries to create a db for caching audio assets 
          * @param {number} dbVersion Current Working Version of our IndexedDB
          * @param {string} basePath The root url to prepend to all file requests
          * @param {object} rootAudioContext Existing AudioContext for decoding audio data
          * @returns {object} Promise
-         * @memberOf Factories.AssetCache
+         * @memberOf AmbientMusicSystem.MusicSystem.AssetCache
          */ 
         function init (dbVersion, basePath, rootAudioContext) {
             var defer = $q.defer();
@@ -87,13 +101,14 @@
             return defer.promise;
         };
         
-        /**
-         * Tries to retrieve and decode audio from cache if exists, or from remote URL if doesn't
-         * @name fetchAsset
+        /**         
+         * @function fetchAsset
+         * @public
+         * @desc Tries to retrieve and decode audio from cache if exists, or from remote URL if doesn't
          * @function fetchAsset
          * @param {string} filepath The audio file to retrieve
          * @returns {object} Promise with the decoded audio data
-         * @memberOf Factories.AssetCache
+         * @memberOf AmbientMusicSystem.MusicSystem.AssetCache
          */ 
         function fetchAsset(filepath) {
             var defer = $q.defer();
