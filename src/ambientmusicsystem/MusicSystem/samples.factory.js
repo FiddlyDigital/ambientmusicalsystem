@@ -980,6 +980,73 @@
             "file": "Tenor Trombone/tenor_trombone-a#2.wav"
         }
     ],
+    "Rainy Metropolis": [
+        {
+            "note": "g#",
+            "octave": "3",
+            "file": "Rainy Metropolis/Rainy-Metropolis-g#3.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "2",
+            "file": "Rainy Metropolis/Rainy-Metropolis-g#2.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "1",
+            "file": "Rainy Metropolis/Rainy-Metropolis-g#1.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "0",
+            "file": "Rainy Metropolis/Rainy-Metropolis-g#0.wav"
+        },
+        {
+            "note": "e",
+            "octave": "3",
+            "file": "Rainy Metropolis/Rainy-Metropolis-e3.wav"
+        },
+        {
+            "note": "e",
+            "octave": "2",
+            "file": "Rainy Metropolis/Rainy-Metropolis-e2.wav"
+        },
+        {
+            "note": "e",
+            "octave": "1",
+            "file": "Rainy Metropolis/Rainy-Metropolis-e1.wav"
+        },
+        {
+            "note": "e",
+            "octave": "0",
+            "file": "Rainy Metropolis/Rainy-Metropolis-e0.wav"
+        },
+        {
+            "note": "c",
+            "octave": "4",
+            "file": "Rainy Metropolis/Rainy-Metropolis-c4.wav"
+        },
+        {
+            "note": "c",
+            "octave": "3",
+            "file": "Rainy Metropolis/Rainy-Metropolis-c3.wav"
+        },
+        {
+            "note": "c",
+            "octave": "2",
+            "file": "Rainy Metropolis/Rainy-Metropolis-c2.wav"
+        },
+        {
+            "note": "c",
+            "octave": "1",
+            "file": "Rainy Metropolis/Rainy-Metropolis-c1.wav"
+        },
+        {
+            "note": "c",
+            "octave": "0",
+            "file": "Rainy Metropolis/Rainy-Metropolis-c0.wav"
+        }
+    ],
     "Piccolo": [
         {
             "note": "f#",
@@ -1496,6 +1563,88 @@
             "note": "a#",
             "octave": "3",
             "file": "Oboe/oboe-a#3.wav"
+        }
+    ],
+    "Legend of SID": [
+        {
+            "note": "g#",
+            "octave": "4",
+            "file": "Legend of SID/Legend-of-SID-g#4.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "3",
+            "file": "Legend of SID/Legend-of-SID-g#3.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "2",
+            "file": "Legend of SID/Legend-of-SID-g#2.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "1",
+            "file": "Legend of SID/Legend-of-SID-g#1.wav"
+        },
+        {
+            "note": "g#",
+            "octave": "0",
+            "file": "Legend of SID/Legend-of-SID-g#0.wav"
+        },
+        {
+            "note": "e",
+            "octave": "4",
+            "file": "Legend of SID/Legend-of-SID-e4.wav"
+        },
+        {
+            "note": "e",
+            "octave": "3",
+            "file": "Legend of SID/Legend-of-SID-e3.wav"
+        },
+        {
+            "note": "e",
+            "octave": "2",
+            "file": "Legend of SID/Legend-of-SID-e2.wav"
+        },
+        {
+            "note": "e",
+            "octave": "1",
+            "file": "Legend of SID/Legend-of-SID-e1.wav"
+        },
+        {
+            "note": "e",
+            "octave": "0",
+            "file": "Legend of SID/Legend-of-SID-e0.wav"
+        },
+        {
+            "note": "c",
+            "octave": "5",
+            "file": "Legend of SID/Legend-of-SID-c5.wav"
+        },
+        {
+            "note": "c",
+            "octave": "4",
+            "file": "Legend of SID/Legend-of-SID-c4.wav"
+        },
+        {
+            "note": "c",
+            "octave": "3",
+            "file": "Legend of SID/Legend-of-SID-c3.wav"
+        },
+        {
+            "note": "c",
+            "octave": "2",
+            "file": "Legend of SID/Legend-of-SID-c2.wav"
+        },
+        {
+            "note": "c",
+            "octave": "1",
+            "file": "Legend of SID/Legend-of-SID-c1.wav"
+        },
+        {
+            "note": "c",
+            "octave": "0",
+            "file": "Legend of SID/Legend-of-SID-c0.wav"
         }
     ],
     "Horns": [

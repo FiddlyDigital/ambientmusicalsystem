@@ -30,14 +30,14 @@
          * @returns {object} Reference to browser implementation of IndexedDB
          * @memberOf AmbientMusicSystem.MusicSystem.AssetCache
          */
-        function setupIndexedDB(){
+        function setupIndexedDB() {
             try
             {
                 window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
                 window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction || {READ_WRITE: "readwrite"}; // This line should only be needed if it is needed to support the object's constants for older browsers
                 window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
             }
-            catch(exc){
+            catch(exc) {
                 // FD: TODO:
             }
             
@@ -87,9 +87,9 @@
             filePrefix = basePath || '';
             audioContext = rootAudioContext || new AudioContext();
             
-            if(setupIndexedDB()){
+            if(setupIndexedDB()) {
                 initAssetCache()
-                    .then(function(result){
+                    .then(function(result) {
                         db = result;    
                         defer.resolve();
                     });
@@ -116,15 +116,15 @@
             var readAssetStore = readTransaction.objectStore(assetCacheObjectStoreName);
             var readSampleRequest = readAssetStore.get(filepath);
             
-            readSampleRequest.onerror = function(event){
+            readSampleRequest.onerror = function(event) {
                 defer.reject(event);
             };
-            readSampleRequest.onsuccess = function(event){
+            readSampleRequest.onsuccess = function(event) {
                 if(event.target.result) {
                     console.log('Using cached version of ' + filepath);
                     
                     audioContext.decodeAudioData(event.target.result.dataView.buffer)
-                        .then(function(buff){
+                        .then(function(buff) {
                             defer.resolve(buff);
                         });
                 } else {
@@ -133,7 +133,8 @@
                     
                     fetch(fullFilePath)
                         .then(function(response) { 
-                            if (response.status == 200 || response.status == 301){
+                            // FD: This is only the fetch - response header
+                            if (response.status == 200 || response.status == 301) {
                                 // parse response
                                 return response.arrayBuffer();  
                             } else {
@@ -141,6 +142,7 @@
                             }
                         })
                         .then(function(arrayBuffer) {
+                            // FD: NOW we're parsing the fetch - response body
                             try {
                                 var writeTransaction = db.transaction([assetCacheObjectStoreName], "readwrite");
                                 writeTransaction.oncomplete = function(event) {
@@ -168,7 +170,7 @@
                                 
                             // decode audio buffer
                             audioContext.decodeAudioData(arrayBuffer)
-                                .then(function(buff){
+                                .then(function(buff) {
                                     defer.resolve(buff);
                                 });
                         });
