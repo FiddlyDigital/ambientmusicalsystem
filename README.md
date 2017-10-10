@@ -1,3 +1,8 @@
+# PLEASE NOTE: Dropbox no longer supports public folders so this app will no longer work without modification. I'm researching alternatives
+
+-------------------------------------------------------------------------
+
+
 # Ambient Musical System
 A musical system inspired by the works of Philip Glass.
 
