@@ -152,6 +152,136 @@
         {
             "note": "f#",
             "octave": "5",
+            "file": "Violas/violas-stc-rr2-f#5.wav"
+        },
+        {
+            "note": "f#",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr2-f#4.wav"
+        },
+        {
+            "note": "f#",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr2-f#3.wav"
+        },
+        {
+            "note": "d#",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr2-d#5.wav"
+        },
+        {
+            "note": "d#",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr2-d#4.wav"
+        },
+        {
+            "note": "d#",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr2-d#3.wav"
+        },
+        {
+            "note": "c",
+            "octave": "6",
+            "file": "Violas/violas-stc-rr2-c6.wav"
+        },
+        {
+            "note": "c",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr2-c5.wav"
+        },
+        {
+            "note": "c",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr2-c4.wav"
+        },
+        {
+            "note": "c",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr2-c3.wav"
+        },
+        {
+            "note": "a",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr2-a5.wav"
+        },
+        {
+            "note": "a",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr2-a4.wav"
+        },
+        {
+            "note": "a",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr2-a3.wav"
+        },
+        {
+            "note": "f#",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr1-f#5.wav"
+        },
+        {
+            "note": "f#",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr1-f#4.wav"
+        },
+        {
+            "note": "f#",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr1-f#3.wav"
+        },
+        {
+            "note": "d#",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr1-d#5.wav"
+        },
+        {
+            "note": "d#",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr1-d#4.wav"
+        },
+        {
+            "note": "d#",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr1-d#3.wav"
+        },
+        {
+            "note": "c",
+            "octave": "6",
+            "file": "Violas/violas-stc-rr1-c6.wav"
+        },
+        {
+            "note": "c",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr1-c5.wav"
+        },
+        {
+            "note": "c",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr1-c4.wav"
+        },
+        {
+            "note": "c",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr1-c3.wav"
+        },
+        {
+            "note": "a",
+            "octave": "5",
+            "file": "Violas/violas-stc-rr1-a5.wav"
+        },
+        {
+            "note": "a",
+            "octave": "4",
+            "file": "Violas/violas-stc-rr1-a4.wav"
+        },
+        {
+            "note": "a",
+            "octave": "3",
+            "file": "Violas/violas-stc-rr1-a3.wav"
+        },
+        {
+            "note": "f#",
+            "octave": "5",
             "file": "Violas/violas-piz-rr2-f#5.wav"
         },
         {
@@ -980,73 +1110,6 @@
             "file": "Tenor Trombone/tenor_trombone-a#2.wav"
         }
     ],
-    "Rainy Metropolis": [
-        {
-            "note": "g#",
-            "octave": "3",
-            "file": "Rainy Metropolis/Rainy-Metropolis-g#3.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "2",
-            "file": "Rainy Metropolis/Rainy-Metropolis-g#2.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "1",
-            "file": "Rainy Metropolis/Rainy-Metropolis-g#1.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "0",
-            "file": "Rainy Metropolis/Rainy-Metropolis-g#0.wav"
-        },
-        {
-            "note": "e",
-            "octave": "3",
-            "file": "Rainy Metropolis/Rainy-Metropolis-e3.wav"
-        },
-        {
-            "note": "e",
-            "octave": "2",
-            "file": "Rainy Metropolis/Rainy-Metropolis-e2.wav"
-        },
-        {
-            "note": "e",
-            "octave": "1",
-            "file": "Rainy Metropolis/Rainy-Metropolis-e1.wav"
-        },
-        {
-            "note": "e",
-            "octave": "0",
-            "file": "Rainy Metropolis/Rainy-Metropolis-e0.wav"
-        },
-        {
-            "note": "c",
-            "octave": "4",
-            "file": "Rainy Metropolis/Rainy-Metropolis-c4.wav"
-        },
-        {
-            "note": "c",
-            "octave": "3",
-            "file": "Rainy Metropolis/Rainy-Metropolis-c3.wav"
-        },
-        {
-            "note": "c",
-            "octave": "2",
-            "file": "Rainy Metropolis/Rainy-Metropolis-c2.wav"
-        },
-        {
-            "note": "c",
-            "octave": "1",
-            "file": "Rainy Metropolis/Rainy-Metropolis-c1.wav"
-        },
-        {
-            "note": "c",
-            "octave": "0",
-            "file": "Rainy Metropolis/Rainy-Metropolis-c0.wav"
-        }
-    ],
     "Piccolo": [
         {
             "note": "f#",
@@ -1563,88 +1626,6 @@
             "note": "a#",
             "octave": "3",
             "file": "Oboe/oboe-a#3.wav"
-        }
-    ],
-    "Legend of SID": [
-        {
-            "note": "g#",
-            "octave": "4",
-            "file": "Legend of SID/Legend-of-SID-g#4.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "3",
-            "file": "Legend of SID/Legend-of-SID-g#3.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "2",
-            "file": "Legend of SID/Legend-of-SID-g#2.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "1",
-            "file": "Legend of SID/Legend-of-SID-g#1.wav"
-        },
-        {
-            "note": "g#",
-            "octave": "0",
-            "file": "Legend of SID/Legend-of-SID-g#0.wav"
-        },
-        {
-            "note": "e",
-            "octave": "4",
-            "file": "Legend of SID/Legend-of-SID-e4.wav"
-        },
-        {
-            "note": "e",
-            "octave": "3",
-            "file": "Legend of SID/Legend-of-SID-e3.wav"
-        },
-        {
-            "note": "e",
-            "octave": "2",
-            "file": "Legend of SID/Legend-of-SID-e2.wav"
-        },
-        {
-            "note": "e",
-            "octave": "1",
-            "file": "Legend of SID/Legend-of-SID-e1.wav"
-        },
-        {
-            "note": "e",
-            "octave": "0",
-            "file": "Legend of SID/Legend-of-SID-e0.wav"
-        },
-        {
-            "note": "c",
-            "octave": "5",
-            "file": "Legend of SID/Legend-of-SID-c5.wav"
-        },
-        {
-            "note": "c",
-            "octave": "4",
-            "file": "Legend of SID/Legend-of-SID-c4.wav"
-        },
-        {
-            "note": "c",
-            "octave": "3",
-            "file": "Legend of SID/Legend-of-SID-c3.wav"
-        },
-        {
-            "note": "c",
-            "octave": "2",
-            "file": "Legend of SID/Legend-of-SID-c2.wav"
-        },
-        {
-            "note": "c",
-            "octave": "1",
-            "file": "Legend of SID/Legend-of-SID-c1.wav"
-        },
-        {
-            "note": "c",
-            "octave": "0",
-            "file": "Legend of SID/Legend-of-SID-c0.wav"
         }
     ],
     "Horns": [
@@ -4084,6 +4065,76 @@
         {
             "note": "g",
             "octave": "6",
+            "file": "2nd Violins/2nd-violins-trm-g6.wav"
+        },
+        {
+            "note": "g",
+            "octave": "5",
+            "file": "2nd Violins/2nd-violins-trm-g5.wav"
+        },
+        {
+            "note": "g",
+            "octave": "4",
+            "file": "2nd Violins/2nd-violins-trm-g4.wav"
+        },
+        {
+            "note": "g",
+            "octave": "3",
+            "file": "2nd Violins/2nd-violins-trm-g3.wav"
+        },
+        {
+            "note": "e",
+            "octave": "6",
+            "file": "2nd Violins/2nd-violins-trm-e6.wav"
+        },
+        {
+            "note": "e",
+            "octave": "5",
+            "file": "2nd Violins/2nd-violins-trm-e5.wav"
+        },
+        {
+            "note": "e",
+            "octave": "4",
+            "file": "2nd Violins/2nd-violins-trm-e4.wav"
+        },
+        {
+            "note": "c#",
+            "octave": "6",
+            "file": "2nd Violins/2nd-violins-trm-c#6.wav"
+        },
+        {
+            "note": "c#",
+            "octave": "5",
+            "file": "2nd Violins/2nd-violins-trm-c#5.wav"
+        },
+        {
+            "note": "c#",
+            "octave": "4",
+            "file": "2nd Violins/2nd-violins-trm-c#4.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "6",
+            "file": "2nd Violins/2nd-violins-trm-a#6.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "5",
+            "file": "2nd Violins/2nd-violins-trm-a#5.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "4",
+            "file": "2nd Violins/2nd-violins-trm-a#4.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "3",
+            "file": "2nd Violins/2nd-violins-trm-a#3.wav"
+        },
+        {
+            "note": "g",
+            "octave": "6",
             "file": "2nd Violins/2nd-violins-sus-g6.wav"
         },
         {
@@ -4433,6 +4484,76 @@
         }
     ],
     "1st Violins": [
+        {
+            "note": "g",
+            "octave": "6",
+            "file": "1st Violins/1st-violins-trm-g6.wav"
+        },
+        {
+            "note": "g",
+            "octave": "5",
+            "file": "1st Violins/1st-violins-trm-g5.wav"
+        },
+        {
+            "note": "g",
+            "octave": "4",
+            "file": "1st Violins/1st-violins-trm-g4.wav"
+        },
+        {
+            "note": "g",
+            "octave": "3",
+            "file": "1st Violins/1st-violins-trm-g3.wav"
+        },
+        {
+            "note": "e",
+            "octave": "6",
+            "file": "1st Violins/1st-violins-trm-e6.wav"
+        },
+        {
+            "note": "e",
+            "octave": "5",
+            "file": "1st Violins/1st-violins-trm-e5.wav"
+        },
+        {
+            "note": "e",
+            "octave": "4",
+            "file": "1st Violins/1st-violins-trm-e4.wav"
+        },
+        {
+            "note": "c#",
+            "octave": "6",
+            "file": "1st Violins/1st-violins-trm-c#6.wav"
+        },
+        {
+            "note": "c#",
+            "octave": "5",
+            "file": "1st Violins/1st-violins-trm-c#5.wav"
+        },
+        {
+            "note": "c#",
+            "octave": "4",
+            "file": "1st Violins/1st-violins-trm-c#4.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "6",
+            "file": "1st Violins/1st-violins-trm-a#6.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "5",
+            "file": "1st Violins/1st-violins-trm-a#5.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "4",
+            "file": "1st Violins/1st-violins-trm-a#4.wav"
+        },
+        {
+            "note": "a#",
+            "octave": "3",
+            "file": "1st Violins/1st-violins-trm-a#3.wav"
+        },
         {
             "note": "g",
             "octave": "6",

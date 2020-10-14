@@ -2,7 +2,7 @@ var fs = require('fs');
 var sampleIndex = {};
 //var basePath = './';
 var basePath = 'C:\\temp\\Sonatina Symphonic Orchestra\\Samples';
-var outputPath = 'C:\\Dev\\ambientmusicalsystem\\src\\ambientmusicsystem\\MusicSystem\\samples.factory.js';
+var outputPath = 'C:\\Dev\\ZZZ_Graveyard\\ambientmusicalsystem\\src\\ambientmusicsystem\\MusicSystem\\samples.factory.js';
 var noteAndOctaveRGX = /[a-gA-G]#*[0-9]/g;
 
 function parseSampleIndiceFromFile(filename) {

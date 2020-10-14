@@ -7,58 +7,58 @@
     function ImpulsesIndex() {
         var Impulses = [{
             name: 'Airport Terminal',
-            file: 'impulse_response/AirportTerminal.wav'
+            file: 'ImpulseResponses/AirportTerminal.wav'
         }, {
             name: 'Castle Thunder',
-            file: 'impulse_response/CastleThunder.wav'
+            file: 'ImpulseResponses/CastleThunder.wav'
         },{
             name: 'Giant Cave',
-            file: 'impulse_response/GiantCave.wav'
+            file: 'ImpulseResponses/GiantCave.wav'
         }, {
             name: 'Hangar',
-            file: 'impulse_response/Hangar.wav'
+            file: 'ImpulseResponses/Hangar.wav'
         }, {
             name: 'Outdoor Blastoff',
-            file: 'impulse_response/OutdoorBlastoff.wav'
+            file: 'ImpulseResponses/OutdoorBlastoff.wav'
         }, {
             name: 'Plate Large',
-            file: 'impulse_response/PlateLarge.wav'
+            file: 'ImpulseResponses/PlateLarge.wav'
         }, {
             name: 'Plate Medium',
-            file: 'impulse_response/PlateMedium.wav'
+            file: 'ImpulseResponses/PlateMedium.wav'
         }, {
             name: 'Plate Small',
-            file: 'impulse_response/PlateSmall.wav'
+            file: 'ImpulseResponses/PlateSmall.wav'
         }, {
             name: 'Plate Super Dry',
-            file: 'impulse_response/PlateSuperDry.wav'
+            file: 'ImpulseResponses/PlateSuperDry.wav'
         }, {
             name: 'Prime Long',
-            file: 'impulse_response/PrimeLong.wav'
+            file: 'ImpulseResponses/PrimeLong.wav'
         }, {
             name: 'Prime Medium',
-            file: 'impulse_response/PrimeMed.wav'
+            file: 'ImpulseResponses/PrimeMed.wav'
         }, {
             name: 'Prime Short',
-            file: 'impulse_response/PrimeShort.wav'
+            file: 'ImpulseResponses/PrimeShort.wav'
         }, {
             name: 'Prime Extra-long',
-            file: 'impulse_response/PrimeXtraLong.wav'
+            file: 'ImpulseResponses/PrimeXtraLong.wav'
         }, {
             name: 'Room Concert Hall',
-            file: 'impulse_response/RoomConcertHall.wav'
+            file: 'ImpulseResponses/RoomConcertHall.wav'
         }, {
             name: 'Room Huge',
-            file: 'impulse_response/RoomHuge.wav'
+            file: 'ImpulseResponses/RoomHuge.wav'
         }, {
             name: 'Room Large',
-            file: 'impulse_response/RoomLarge.wav'
+            file: 'ImpulseResponses/RoomLarge.wav'
         }, {
             name: 'Room Medium',
-            file: 'impulse_response/RoomMedium.wav'
+            file: 'ImpulseResponses/RoomMedium.wav'
         }, {
             name: 'Room Pool',
-            file: 'impulse_response/RoomPool.wav'
+            file: 'ImpulseResponses/RoomPool.wav'
         }];
     
         return Impulses;    

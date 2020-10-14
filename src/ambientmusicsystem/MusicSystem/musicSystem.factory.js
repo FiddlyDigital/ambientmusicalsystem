@@ -203,7 +203,8 @@
         return {
             init: init,
             start: startMusic,
-            stop: stopMusic
+            stop: stopMusic,
+            audioContext: audioContext
         };    
     }
 })();

@@ -120,15 +120,12 @@
                 defer.reject(event);
             };
             readSampleRequest.onsuccess = function(event) {
-                if(event.target.result) {
-                    console.log('Using cached version of ' + filepath);
-                    
+                if(event.target.result) {                   
                     audioContext.decodeAudioData(event.target.result.dataView.buffer)
                         .then(function(buff) {
                             defer.resolve(buff);
                         });
                 } else {
-                    console.log('Fetching fresh version of ' + filepath);
                     var fullFilePath = filePrefix + encodeURIComponent(filepath);
                     
                     fetch(fullFilePath)
